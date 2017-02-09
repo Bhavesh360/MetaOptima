@@ -1,0 +1,22 @@
+
+<form action="/response" method="post">
+    <style>
+    table.tab {
+         margin-top: 10%;
+        }
+    </style>
+    <table class = "tab" align = "center">
+        <tr><td align="center"><img src="https://metaoptima.com/static/metaoptima/img/metaoptima-logotype.png" alt="MetaOptima"  style="width:30%;height:10%;"></td></tr>
+        {% csrf_token %}
+        <tr><td>
+        <table style="margin:auto" align="center">
+            <tr><td ><b>Name: {{name}}</b></td></tr>
+            <tr><td ><b>Input String: {{inputstring}}</b></td></tr>
+            <tr><td ><b>Execution Time: {{exececutiontime}}</b></td></tr>
+            <tr><td align = "center"><input type="submit" value="Try Again"></td></tr>
+        </table>
+        </td></tr>
+    </table>
+
+
+</form>

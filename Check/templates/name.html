@@ -1,0 +1,19 @@
+<form method="post">
+    <style>
+    table.tab {
+         margin-top: 10%;
+        }
+    </style>
+    <table class = "tab" align = "center">
+        <tr><td align="center"><img src="https://metaoptima.com/static/metaoptima/img/metaoptima-logotype.png" alt="MetaOptima"  style="width:30%;height:10%;"></td></tr>
+        {% csrf_token %}
+        <tr><td>
+        <table style="margin:auto" align="center">
+            <tr><td>{{form}}</td></tr>
+            <tr><td></td><td align = "right"><input type="submit" value="Submit"></td></tr>
+        </table>
+        </td></tr>
+    </table>
+
+
+</form>
